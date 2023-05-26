@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slow and Steady</title>
+    <script src="./app.js" defer></script>
+    <link href="./style.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <audio class="carGoA" src="../audio/carGo.wav" autoplay loop></audio>
+    <audio src="../audio/startGame.wav" class ="startGame" autoplay loop></audio>
+    <audio class="carStartA" src="../audio/carStart.wav"></audio>
+    <audio class="crashA" src="../audio/crash.wav"></audio>
+    <audio class="driftA" src="../audio/drift.mp3"></audio>
+    <audio class="hornA" src="../audio/horn.wav"></audio>
+    <audio class="levelA" src="../audio/level.wav"></audio>
+    <audio class="policeA" src="../audio/police.wav"></audio>
+    <audio class="wonA" src="../audio/won.wav"></audio>
+    <audio class="loseA" src="../audio/lose.wav"></audio>
+    <audio class="countDownA" src="../audio/count down.wav"></audio>
+    <audio class="buttonA" src="../audio/button.mp3"></audio>
+    <audio class="buttonB" src="../audio/hover.mp3"></audio>
+    
+    <div class="fade-in"></div>
+    <div class="blurr"></div>
+    <div class="guideTag">
+        <h3 class="guide"><span class="word">left button</span> or <span class="word">right button</span></h3>
+        <h3 class="startBtn">Press any button to start</h3>
+    </div>
+    <img class ="countDown" src="../Images/giphy.gif">
+    <div class="mainPage">
+        <h1>Drive Slow and Safely!</h1>
+
+        <div class="container">
+            <div id="timer">Your score : 0 pts</div>
+            <div class="stage">Stage : 1</div>
+            <img src="../Images/levelup.gif" class="levelUp">
+            <div class="information">
+                <ul>
+                    <li>Use left or right button to dodge the incoming cars</li>
+                    <li>10 points will be given every 1 seconds</li>
+                    <li>Stage will be leveled up every 100 points gained</li>
+                    <li>Don't go out of the track</li>
+                    <li>Win the game with 500 pts</li>
+                    <li>Enjoy and Good Luck!</li>
+                </ul>
+            </div>
+            <div class="parent">
+                <div class="whiteLine" id="a"></div>
+                <div class="whiteLine" id="b"></div>
+                <div class="whiteLine" id="c"></div>
+                <div class="whiteLine" id="d"></div>
+                <div class="whiteLine" id="e"></div>
+                <div class="whiteLine" id="f"></div>
+                <div class="whiteLine" id="g"></div>
+                <div class="whiteLine" id="h"></div>
+                <div class="whiteLine" id="i"></div>
+                <div class="whiteLine" id="j"></div>
+                <img src="../Images/yelloCar.png" class="car">
+                <div class="winBox">
+                    <h3>Congratulation! You've Won!</h3>
+                    <img src="../Images/trophy.gif" class="won">
+                    <button class="inGame mainMenu allBtn">Main Menu</button>
+                    <button class="inGame tryAgain allBtn">Try Again</button>
+                </div>
+                <div class="loseBox">
+                    <h3>Game over. Please drive slowly!</h3>
+                    <img src="../Images/gameOver.gif" class="gameOver">
+                    <button class="inGame mainMenu allBtn">Main Menu</button>
+                    <button class="inGame tryAgain allBtn">Try Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
